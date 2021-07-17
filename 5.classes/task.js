@@ -100,9 +100,6 @@ class Student {
         this.name = name;
         this.subject = {};
     }
-    setSubject(subjectName) {
-        this.subject[subjectName] = [];
-    }
     addMark(mark, subjectName) {
         if ((mark < 0) || (mark > 5) || (typeof mark !== 'number')) {
             console.log('Сообщение об ошибке: Пожалуйста, проверьте правильность введенных данных.');
